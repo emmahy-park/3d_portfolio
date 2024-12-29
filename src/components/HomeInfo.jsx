@@ -14,7 +14,7 @@ const InfoBox = ({text, link, btnText}) => (
 
 const renderContent = {
     1: (
-        <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
+        <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-black py-4 px-8 text-white mx-5">
             Hi, I am <span className="font-semibold">Emma</span>👋
             <br/>
             Welcome to my 3D portfolio!
@@ -22,14 +22,15 @@ const renderContent = {
     ),
     2: (
         <InfoBox 
-            text="Worked on many projects and picked up many skills on the way"
+            text="Please click below to learn more about me."
             link = "/about"
             btnText="Learn more"
         />
     ),
     3: (
         <InfoBox 
-            text="Worked on many projects and picked up many skills on the way"
+            text=<> Worked on many projects <br/> and picked up many skills on the way
+            </>
             link = "/projects"
             btnText="Visit my portfolio"
         />
@@ -42,7 +43,7 @@ const renderContent = {
         />
     ),
     5: (
-        <h1 className='mx-5 font-light text-center text-white'>
+        <h1 className='mx-5 font-bold text-center text-white'>
             Drag left/right to rotate!
         </h1>
     )

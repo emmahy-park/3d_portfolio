@@ -4,6 +4,7 @@ import Loader from '../components/Loader'
 import HomeInfo from '../components/HomeInfo'
 import Planet from '../models/Planet';
 import Plane from '../models/Plane';
+import Space from '../models/Space';
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
@@ -12,22 +13,13 @@ const Home = () => {
 
   const adjustPlanetForScreenSize = () => {
     let screenScale = [5, 5, 5];
-    let screenPosition = [0, -1, 1];
+    let screenPosition = [-0.05, -1.25, 1];
     let rotation = [0.3, -0.4, 0];
 
     return [screenScale, screenPosition, rotation]
   }
 
-  const adjustPlaneForScreenSize = () => {
-    let screenScale = [0.3, 0.3, 0.3];
-    let screenPosition = [0, -0.1, 3.5];
-    let rotation = [0.1, -5, 0.1]
-
-    return [screenScale, screenPosition, rotation]
-  }
-
   const [planetScale, planetPosition, planetRotation] = adjustPlanetForScreenSize();
-  const [planeScale, planePosition, planeRotation] = adjustPlaneForScreenSize();
 
   return (
     <section className="w-full h-screen relative">
@@ -41,12 +33,8 @@ const Home = () => {
             <directionalLight position={[1, 1, 1]} intensity={2}/>
             <ambientLight intensity={0.5}/>
             <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={1}/>
-            <Plane
-              position = {planePosition}
-              scale = {planeScale}
-              rotation = {planeRotation}
-              isRotating = {isRotating}
-            />
+            <Plane />
+            <Space isRotating={isRotating} />
             <Planet 
               position = {planetPosition}
               scale = {planetScale}

@@ -4,6 +4,8 @@ import shopify from './shopify.png'
 import starbucks from './starbucks.png'
 import tesla from './tesla.png'
 import logo from './logo.svg'
+import canada from './canada.png'
+import botany from './botany.jpeg'
 
 export {
     hero,
@@ -11,5 +13,7 @@ export {
     shopify,
     starbucks,
     tesla,
+    canada,
+    botany,
     logo
 }

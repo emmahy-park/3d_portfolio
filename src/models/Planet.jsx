@@ -46,7 +46,7 @@ const Planet = ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
         const delta = (clientX - lastX.current) / viewport.width;
         planetRef.current.rotation.y += delta * 0.01* Math.PI;
         lastX.current = clientX;
-        rotationSpeed.current = delta * 0.005 * Math.PI;
+        rotationSpeed.current = delta * 0.001 * Math.PI;
     }
   }
 
@@ -67,13 +67,13 @@ const Planet = ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
             case normalizedRotation >= 0.1 && normalizedRotation <= 0.9:
                 setCurrentStage(4);
                 break;
-            case normalizedRotation >= 1.5 && normalizedRotation <= 2.4:
+            case normalizedRotation >= 1.5 && normalizedRotation <= 2.3:
                 setCurrentStage(3);
                 break;
-            case normalizedRotation >= 3.0 && normalizedRotation <= 3.9:
+            case normalizedRotation >= 3.0 && normalizedRotation <= 3.8:
                 setCurrentStage(2);
                 break;
-            case normalizedRotation >= 4.5 && normalizedRotation <= 5.4:
+            case normalizedRotation >= 4.4 && normalizedRotation <= 5.6:
                 setCurrentStage(1);
                 break;
             default:
@@ -118,10 +118,10 @@ const Planet = ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
           geometry={nodes.Material2_4.geometry}
           material={materials['13_obj']}
         />
-        <mesh
+        {/* <mesh
           geometry={nodes.Material2_5.geometry}
           material={materials['Dosch-Space_0019-thumb.jpg']}
-        />
+        /> */}
         <mesh 
           geometry={nodes.Material2_6.geometry}
           material={materials['PM3D_Cube3D2.005']}
