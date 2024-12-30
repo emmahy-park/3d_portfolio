@@ -15,7 +15,7 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault;
+    e.preventDefault();
     setIsLoading(true);
 
     emailjs.send(
@@ -36,11 +36,9 @@ const Contact = () => {
 
       setTimeout(() => {
         hideAlert(false);
-        setCurrentAnimation('idle')
         setForm({ name: '', email: '', message: ''});
-      }, [1000])
+      }, [2000])
       // TODO: Hide an alert
-      setForm({ name: '', email: '', message: ''})
     }).catch((error) => {
       setIsLoading(false);
       console.error(error);

@@ -164,12 +164,5 @@ export const projects = [
         name: 'Emergency Patient Queue Management System',
         description: 'Java desktop app that triages the patients in the Emergency Room.',
         link: 'https://github.com/emmahy-park/ERQueue2',
-    },
-    {
-        iconUrl: doctor,
-        theme: 'btn-back-pink',
-        name: 'Rankotomy',
-        description: 'Neurophysiological monitoring of electromyography signals during selective dorsal rhizotomy in children with cerebral palsy.',
-        link: 'https://github.com/Rankotomy/DesktopApplication',
     }
 ];
