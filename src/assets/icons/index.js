@@ -34,6 +34,7 @@ import outfit from './lab-coat-svgrepo-com.svg'
 import lab from './lab-svgrepo-com.svg'
 import code from './code-square-svgrepo-com.svg'
 import doctor from './doctor-svgrepo-com.svg'
+import game from './game.svg'
 
 export {
     css,
@@ -71,5 +72,6 @@ export {
     outfit,
     lab,
     code,
-    doctor
+    doctor,
+    game
 }

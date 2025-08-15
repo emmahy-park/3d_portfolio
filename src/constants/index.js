@@ -1,4 +1,4 @@
-import { botany, canada } from "../assets/images";
+import { ubc, botany, canada } from "../assets/images";
 import {
     css,
     express,
@@ -19,7 +19,7 @@ import {
     outfit,
     lab,
     code,
-    doctor
+    game
 } from "../assets/icons";
 
 export const skills = [
@@ -91,16 +91,28 @@ export const skills = [
 ];
 
 export const experiences = [
+        {
+        title: "Web Support Specialist",
+        company_name: "UBC Web Services",
+        icon: ubc,
+        iconBg: "#f6f7a8",
+        date: "May 2025 - Present",
+        points: [
+            "Delivering secure, high-availability web services for 300+ UBC sites to ensure uninterrupted access for students, faculty, and staff.",
+            "Developing and testing new features, templates, and internal tools to enhance user experience and workflow.",
+            "Collaborating with project leads and clients to gather requirements and delivering responsive Drupal solutions that meet departmental goals.",
+        ],
+    },
     {
         title: "IT Support Analyst",
         company_name: "UBC Botany",
         icon: botany,
         iconBg: "#b7e4c7",
-        date: "May 2024 - Present",
+        date: "May 2024 - Apr 2025",
         points: [
-            "Providing desktop support to faculty, staff and students in the Botany Department, ensuring seamless operation across operating systems including Windows and macOS.",
-            "Contributing to various IT projects by developing and maintaining WordPress and Drupal websites, and configuring a network switch to enhance system performance and reliability.",
-            "Implementing Zabbix monitoring agents to ensure continuous system performance tracking and stability.",
+            "Provided desktop support to faculty, staff and students in the Botany Department, ensuring seamless operation across operating systems including Windows and macOS.",
+            "Contributed to various IT projects by developing and maintaining WordPress and Drupal websites, and configuring a network switch to enhance system performance and reliability.",
+            "Implemented Zabbix monitoring agents to ensure continuous system performance tracking and stability.",
         ],
     },
     {
@@ -137,6 +149,13 @@ export const socialLinks = [
 ];
 
 export const projects = [
+     {
+        iconUrl: game,
+        theme: 'btn-back-black',
+        name: '2D Action Game',
+        description: 'Developed a 2D rogue-lite action game where players battle through enemy-filled rooms, collect rewards, and upgrade abilities to escape the dark city of Abyss by defeating its boss.',
+        link: 'https://github.com/emmahy-park/SkySeeker',
+    },
     {
         iconUrl: code,
         theme: 'btn-back-blue',

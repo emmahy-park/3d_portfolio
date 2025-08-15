@@ -6,6 +6,7 @@ import tesla from './tesla.png'
 import logo from './logo.svg'
 import canada from './canada.png'
 import botany from './botany.jpeg'
+import ubc from './ubc.png'
 
 export {
     hero,
@@ -15,5 +16,6 @@ export {
     tesla,
     canada,
     botany,
-    logo
+    logo,
+    ubc
 }
